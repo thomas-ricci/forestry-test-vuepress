@@ -1,4 +1,25 @@
 ---
 label: project
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
+  description: Title of this project
+- name: project_image
+  type: file
+  config:
+    maxSize: 250
+  label: Project Image
+  description: Key project image for search results, SEO etc
+- name: main
+  type: blocks
+  label: Main
+  template_types:
+  - journal
+  config:
+    min: 
+    max: 
+  description: The main bulk of your content
